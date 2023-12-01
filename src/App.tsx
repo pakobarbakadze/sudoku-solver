@@ -1,5 +1,7 @@
+import Board from "./board/Board";
+
 const App = () => {
-  return <div>App</div>;
+  return <Board></Board>;
 };
 
 export default App;

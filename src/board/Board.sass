@@ -1,0 +1,38 @@
+.board__container
+  width: 100vw
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.board
+  width: 500px
+  height: 500px
+
+.board__row
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+  &:nth-child(3n):not(:last-child)
+    border-bottom: 1px solid #000
+
+  input
+    width: calc(100% / 9)
+    aspect-ratio: 1 / 1
+    text-align: center
+    font-size: 24px
+    border: 1px solid #e0e0e0
+
+    &:nth-child(3n):not(:last-child)
+      border-right: 1px solid #000
+
+.controls
+  margin-top: 25px
+  display: flex
+  gap: 10px
+
+  button
+    padding: 5px 10px
+    font-size: 18px
